@@ -1,0 +1,33 @@
+  <button (click)="addTasks()" type="button" class="btn btn-primary">Add</button>
+
+  <form [formGroup]="taskForm" class="row g-3 p-3 m-3">
+    <div formArrayName="addtask">
+      <ng-container *ngFor="let alias of addtaskGet.controls;index as i">
+        <div formGroupName="{{i}}" >
+    <div  class="col-6 p-3">
+     <input type="text" class="form-control" formControlName="taskDesc" />
+    </div>
+    <div class="col-2">
+      <select formControlName="assignTo" class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+  </div>
+  <div class="col-2">
+    <input  type="date" class="form-select mb-3" formControlName="startOn" />
+  </div>
+  <div class="col-2">
+      <input type="date" class="form-select mb-3" formControlName="endOn" />
+    </div>
+    </div>
+  </ng-container>
+    </div>
+    <button type="button" (click)="fun()" >click</button>
+  </form>
+
+  <button type="button" (click)="getManagerDetails()"></button>
+
+  
+

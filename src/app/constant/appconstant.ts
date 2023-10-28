@@ -1,0 +1,12 @@
+const USER_COMMAN_API_URL = '/user';
+const VICE_COMMAN_API_URL = '/vice';
+
+export const Appconstant = {
+  REGISTERED_API_URL: `${USER_COMMAN_API_URL}/register`,
+  LOGIN_API_URL: `${USER_COMMAN_API_URL}/login`,
+  MANAGERDETAILS_API_URL: `${VICE_COMMAN_API_URL}/Managerdetails`,
+  EMPLOYEEDETAILS_API_URL: `${VICE_COMMAN_API_URL}/emplydetails`,
+  CREATETASK_API_URL: `${VICE_COMMAN_API_URL}/createTask`,
+  VIEWTASK_API_URL: `${VICE_COMMAN_API_URL}/viewtasks`,
+  LISTOMANAGERS_API_URL: `${VICE_COMMAN_API_URL}/managers`,
+};
